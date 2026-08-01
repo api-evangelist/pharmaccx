@@ -1,8 +1,27 @@
 aid: pharmaccx
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pharmaccx.png
 name: PharmaCCX
-description: 'PharmaCCX is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'PharmaCCX, operating as CCX (Contingent Commitment Exchange), is a digital
+  market-access and pricing software company for the pharmaceutical industry, serving
+  pharma manufacturers, payers, and health systems. Its enterprise platform provides
+  a single source of truth for global pricing strategy and contract management through
+  three products: CCX Planning (contract scenario planning, modeling, and analysis),
+  Deal Admin (contract administration and pharma-payer coordination), and CCX Digital
+  Negotiation (an invite-only deal negotiation tool). The platform is delivered as
+  an invite-only enterprise SaaS terminal (marketaccess.ccxterminal.com) with Terminal
+  and Sandbox environments; no public developer API, documentation, or portal is
+  published as of this profiling.'
 url: https://raw.githubusercontent.com/api-evangelist/pharmaccx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Pharmaceutical
+- Market Access
+- Pricing
+- Contract Management
+- Payers
+- Enterprise SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pharmaccx-domain-security.yml
 - type: Website
-  url: http://www.pharmaccx.com
+  url: https://www.ccx.tech/
+- type: PrivacyPolicy
+  url: https://www.ccx.tech/privacy-policy
+- type: Login
+  url: https://marketaccess.ccxterminal.com/login
+- type: Support
+  url: mailto:support@ccx.tech
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
