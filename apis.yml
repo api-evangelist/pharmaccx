@@ -49,7 +49,6 @@ tags:
 - Pharmaceuticals
 - Market Access
 - Pricing
-- Contract Management
 - Payers
 - Enterprise Saas
 tags_raw:
@@ -58,7 +57,6 @@ tags_raw:
 - Pharmaceutical
 - Market Access
 - Pricing
-- Contract Management
 - Payers
 - Enterprise SaaS
 apis: []
@@ -83,3 +81,5 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-tags-removed:
+- Contract Management
